@@ -15,7 +15,7 @@ class SpringbootKotlinConfigPropertiesApplication(
 ) : CommandLineRunner {
     override fun run(vararg args: String?) {
         println("== constructorBinding: primary constructor ==")
-        println("test: "+propsWithConstructorBinding.test)
+        println("test: "+propsWithConstructorBinding.intProp)
         println("strProp: "+propsWithConstructorBinding.strProp)
         println("beansList:")
         for (someBean in propsWithConstructorBinding.beansList) {

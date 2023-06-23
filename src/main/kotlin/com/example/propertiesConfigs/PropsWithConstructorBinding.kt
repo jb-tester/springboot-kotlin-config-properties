@@ -4,14 +4,13 @@ import com.example.data.SomeBean
 import org.example.Enum1
 import org.example.Enum2
 import org.springframework.boot.context.properties.ConfigurationProperties
-import org.springframework.boot.context.properties.NestedConfigurationProperty
 
 @ConfigurationProperties("constructor.props")
 class PropsWithConstructorBinding(
     /**
-     *  constructor.props.test documentation.
+     *  constructor.props.intProp documentation.
      */
-    val test: Int,
+    val intProp: Int,
     /**
      *  constructor.props.strProp documentation.
      */
