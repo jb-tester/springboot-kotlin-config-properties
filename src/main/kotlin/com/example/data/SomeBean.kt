@@ -1,6 +1,6 @@
-package org.example
+package com.example.data
 
-class SomeBean(
+data class SomeBean(
     val strBeanProp: String,
     val strSetBeanProp: Set<String>
 ) {

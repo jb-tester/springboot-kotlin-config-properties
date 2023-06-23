@@ -4,31 +4,33 @@ import com.example.data.SomeBean
 import org.example.Enum1
 import org.example.Enum2
 import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.boot.context.properties.NestedConfigurationProperty
 
-@ConfigurationProperties("app.first.properties")
-class PropsWithDefaultConstructor(
+@ConfigurationProperties("constructor.props")
+class PropsWithConstructorBinding(
     /**
-     *  app.properties.test documentation.
+     *  constructor.props.test documentation.
      */
     val test: Int,
     /**
-     *  app.properties.strProp documentation.
+     *  constructor.props.strProp documentation.
      */
     val strProp: String,
     /**
-     *  app.properties.beansList documentation.
+     *  constructor.props.beansList documentation.
      */
     val beansList: List<SomeBean>,
     /**
-     *  app.properties.enumProp documentation.
+     *  constructor.props.enumProp documentation.
      */
     val enumProp: Enum2,
     /**
-     *  app.properties.enumsMap documentation.
+     *  constructor.props.enumsMap documentation.
      */
     val enumsMap: Map<Enum1,Enum2>,
     /**
-     *  app.properties.someBean documentation.
+     *  constructor.props.someBean documentation.
      */
+  //  @NestedConfigurationProperty
     val someBean: SomeBean
 )

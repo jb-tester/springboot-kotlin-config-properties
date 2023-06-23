@@ -1,18 +1,19 @@
-package org.example
+package com.example.propertiesConfigs
 
+import com.example.data.AnotherBean
+import com.example.data.SomeBean
 import org.springframework.boot.context.properties.ConfigurationProperties
 
-@ConfigurationProperties("app.second.properties")
+@ConfigurationProperties("vars.props")
 class PropsWithFields {
     /**
-     * app.third.properties.strProp prop doc.
+     * vars.props.strProp prop doc.
      */
     var strProp: String? = "default"
     /**
-     * app.third.properties.boolProp prop doc.
+     * vars.props.boolProp prop doc.
      */
-    var boolProp: Boolean = true
+    var boolProp: Boolean = false
 
-
-
+    lateinit var anotherBean: AnotherBean
 }

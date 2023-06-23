@@ -1,8 +1,7 @@
 package com.example.data
 
-data class SomeBean(
-    val strBeanProp: String,
-    val strSetBeanProp: Set<String>
-) {
+class AnotherBean{
 
+  var strProp: String = "default"
+  var boolProp: Boolean = false
 }
