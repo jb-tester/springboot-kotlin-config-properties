@@ -1,7 +1,12 @@
 package com.example.data
 
 class AnotherBean{
-
+  /**
+   * vars.props.another-bean.str-prop prop doc.
+   */
   var strProp: String = "default"
-  var boolProp: Boolean = false
+  /**
+   * var.props.another-bean.bool-prop prop doc.
+   */
+  val boolProp: Boolean = false
 }

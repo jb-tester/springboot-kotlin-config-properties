@@ -1,11 +1,11 @@
 package com.example.propertiesConfigs
 
 import com.example.data.AnotherBean
-import com.example.data.SomeBean
 import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.boot.context.properties.NestedConfigurationProperty
 
 @ConfigurationProperties("vars.props")
-class PropsWithFields {
+class PropsWithVarFields {
     /**
      * vars.props.strProp prop doc.
      */
@@ -15,5 +15,6 @@ class PropsWithFields {
      */
     var boolProp: Boolean = false
 
+   @NestedConfigurationProperty
     lateinit var anotherBean: AnotherBean
 }
