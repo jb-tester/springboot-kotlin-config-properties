@@ -8,5 +8,5 @@ class AnotherBean{
   /**
    * var.props.another-bean.bool-prop prop doc.
    */
-  val boolProp: Boolean = false
+  var boolProp: Boolean = false
 }
