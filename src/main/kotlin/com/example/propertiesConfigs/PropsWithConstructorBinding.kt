@@ -17,13 +17,13 @@ class PropsWithConstructorBinding(
      */
     val strProp: String = "default",
     /**
-     *  constructor.props.beansList documentation.
-     */
-    val beansList: List<SomeBean>,
-    /**
      *  constructor.props.enumProp documentation.
      */
     val enumProp: Enum2 = Enum2.EL21,
+    /**
+     *  constructor.props.beansList documentation.
+     */
+    val beansList: List<SomeBean>,
     /**
      *  constructor.props.enumsMap documentation.
      */
